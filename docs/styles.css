@@ -61,3 +61,13 @@ svg {
   background: #ffffff;
   color: #1b1734;
 }
+
+h1 {
+  color: blue;
+  text-decoration: dotted;
+}
+
+h2 {
+  color: lightblue;
+  text-decoration: double;
+}
