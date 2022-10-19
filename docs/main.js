@@ -1,3 +1,5 @@
+console.log("TEst");
+
 gsap.registerPlugin(ScrollTrigger);
 let speed = 100;
 
