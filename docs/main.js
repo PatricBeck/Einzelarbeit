@@ -1,3 +1,21 @@
+// -------------------------- Content --------------------------
+// Sticky Navigation
+window.addEventListener("scroll", () => {
+  addStickyClasses();
+});
+
+function addStickyClasses() {
+  let nav = document.getElementById("main-nav");
+  let reference = document.getElementById("reference");
+  if (window.scrollY > reference.offsetTop) {
+    nav.classList.add("sticky");
+  } else {
+    nav.classList.remove("sticky");
+  }
+}
+
+// -------------------------- Parralax-Effect --------------------------
+
 console.log("TEst");
 
 gsap.registerPlugin(ScrollTrigger);

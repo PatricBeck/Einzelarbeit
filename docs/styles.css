@@ -1,8 +1,63 @@
+/* -------------------------- Content -------------------------- */
+body {
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+section {
+  height: 100vh;
+  width: 100vh;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 3%;
+  z-index: 1;
+}
+
+main {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  flex-direction: column;
+}
+
+nav {
+  position: absolute;
+  top: 90vh;
+  z-index: 100;
+  display: flex;
+  gap: 3em;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 2vh;
+  border-radius: 7px;
+}
+
+#reference {
+  position: absolute;
+  top: 90vh;
+}
+
+.sticky {
+  position: fixed;
+  top: 3vh;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+h1 {
+  color: black;
+}
+
+/* -------------------------- Parralax-Effect -------------------------- */
 body,
 html {
   margin: 0;
   padding: 0;
   height: 100%;
+  scroll-behavior: smooth;
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
@@ -60,14 +115,4 @@ svg {
 .btn:hover {
   background: #ffffff;
   color: #1b1734;
-}
-
-h1 {
-  color: blue;
-  text-decoration: dotted;
-}
-
-h2 {
-  color: lightblue;
-  text-decoration: double;
 }
