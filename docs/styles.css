@@ -1,4 +1,53 @@
 /* -------------------------- Content -------------------------- */
+:root {
+  --color-main-dark: #191530;
+  --color-mid-darker: #6a4e6e;
+  --color-mid-dark: #e39787;
+  --color-mid-light: #ffbca9;
+  --color-accent: #ffe2b7;
+  --color-home-light: #ffbca8;
+  --color-home-profile: #ffa78d;
+  --color-profile-cv: #c48481;
+  --color-cv-portfolio: #6b4f6f;
+  --color-portfolio-contact: #1d1d3a;
+  --color-contact-dark: #252142;
+  --color-gradient-home: linear-gradient(
+    180deg,
+    var(--color-home-light) 0%,
+    var(--color-home-profile) 100%
+  );
+  --color-gradient-profile: linear-gradient(
+    180deg,
+    var(--color-home-profile) 0%,
+    var(--color-profile-cv) 100%
+  );
+  --color-gradient-cv: linear-gradient(
+    180deg,
+    var(--color-profile-cv) 0%,
+    var(--color-cv-portfolio) 100%
+  );
+  --color-gradient-portfolio: linear-gradient(
+    180deg,
+    var(--color-cv-portfolio) 0%,
+    var(--color-portfolio-contact) 100%
+  );
+  --color-gradient-contact: linear-gradient(
+    180deg,
+    var(--color-portfolio-contact) 0%,
+    var(--color-contact-dark) 100%
+  );
+  /*--color-gradient: linear-gradient(
+    0deg,
+    var(--color-main-dark) 0%,
+    var(--color-mid-darker) 50%,
+    var(--color-mid-light) 100%
+  );*/
+}
+
+* {
+  color: var(--color-mid-light);
+}
+
 body {
   margin: 0;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -7,9 +56,32 @@ body {
 section {
   height: 100vh;
   width: 100vh;
-  background-color: rgba(255, 255, 255, 0.3);
-  border-radius: 3%;
+  /*background-color: rgba(25, 21, 48, 0.98);*/
+  border-radius: 1vh;
   z-index: 1;
+  display: flex;
+  justify-content: space-around;
+}
+
+#home {
+  background: var(--color-gradient-home);
+  /*filter: blur(15px);*/
+}
+
+#profile {
+  background: var(--color-gradient-profile);
+}
+
+#cv {
+  background: var(--color-gradient-cv);
+}
+
+#portfolio {
+  background: var(--color-gradient-portfolio);
+}
+
+#contact {
+  background: var(--color-gradient-contact);
 }
 
 main {
@@ -26,9 +98,13 @@ nav {
   z-index: 100;
   display: flex;
   gap: 3em;
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: var(--color-mid-darker);
   padding: 2vh;
-  border-radius: 7px;
+  border-radius: 1vh;
+}
+
+#main-nav {
+  color: var(--color-accent);
 }
 
 #reference {
@@ -44,14 +120,28 @@ nav {
 a:link,
 a:visited {
   text-decoration: none;
-  color: black;
 }
 
 h1 {
-  color: black;
+  color: var(--color-mid-light);
+  margin-top: 15vh;
 }
 
-/* -------------------------- Parralax-Effect -------------------------- */
+#credits {
+  height: 5vh;
+  bottom: 1em;
+  display: flex;
+  place-items: center;
+  justify-content: space-around;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+#credits a {
+  text-decoration: none;
+  color: #99a;
+}
+
+/* -------------------------- Parallax-Effect -------------------------- */
 body,
 html {
   margin: 0;

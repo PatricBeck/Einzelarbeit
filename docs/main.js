@@ -14,7 +14,7 @@ function addStickyClasses() {
   }
 }
 
-// -------------------------- Parralax-Effect --------------------------
+// -------------------------- Parallax-Effect --------------------------
 
 console.log("TEst");
 
