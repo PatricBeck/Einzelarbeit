@@ -5,12 +5,13 @@
   --color-mid-dark: #e39787;
   --color-mid-light: #ffbca9;
   --color-accent: #ffe2b7;
-  --color-home-light: #ffbca8;
-  --color-home-profile: #ffa78d;
-  --color-profile-cv: #c48481;
-  --color-cv-portfolio: #6b4f6f;
-  --color-portfolio-contact: #1d1d3a;
-  --color-contact-dark: #252142;
+  --color-home-light: #ffbca8e3;
+  --color-home-profile: #ffa78de3;
+  --color-profile-cv: #c48481e3;
+  --color-cv-portfolio: #6b4f6fe3;
+  --color-portfolio-contact: #1d1d3ae3;
+  --color-contact-dark: #252142e3;
+  --color-opacity: #6a4e6ee3;
   --color-gradient-home: linear-gradient(
     180deg,
     var(--color-home-light) 0%,
@@ -36,6 +37,7 @@
     var(--color-portfolio-contact) 0%,
     var(--color-contact-dark) 100%
   );
+
   /*--color-gradient: linear-gradient(
     0deg,
     var(--color-main-dark) 0%,
@@ -104,17 +106,18 @@ nav {
 }
 
 #main-nav {
+  margin-top: 3vh;
   color: var(--color-accent);
 }
 
 #reference {
   position: absolute;
-  top: 90vh;
+  top: 86vh;
 }
 
 .sticky {
   position: fixed;
-  top: 3vh;
+  top: 0;
 }
 
 a:link,
