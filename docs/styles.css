@@ -5,13 +5,13 @@
   --color-mid-dark: #e39787;
   --color-mid-light: #ffbca9;
   --color-accent: #ffe2b7;
-  --color-home-light: #ffbca8e3;
-  --color-home-profile: #ffa78de3;
-  --color-profile-cv: #c48481e3;
-  --color-cv-portfolio: #6b4f6fe3;
-  --color-portfolio-contact: #1d1d3ae3;
-  --color-contact-dark: #252142e3;
-  --color-opacity: #6a4e6ee3;
+  --color-home-light: #ffbca8f2;
+  --color-home-profile: #ffa78df2;
+  --color-profile-cv: #c48481f2;
+  --color-cv-portfolio: #6b4f6ff2;
+  --color-portfolio-contact: #1d1d3af2;
+  --color-contact-dark: #252142f2;
+  --color-opacity: #6a4e6ef2;
   --color-gradient-home: linear-gradient(
     180deg,
     var(--color-home-light) 0%,
@@ -56,7 +56,7 @@ body {
 }
 
 section {
-  height: 100vh;
+  height: 200vh;
   width: 170vh;
   /*background-color: rgba(25, 21, 48, 0.98);*/
   border-radius: 1vh;
@@ -134,6 +134,7 @@ h1 {
 p {
   margin-top: 30vh;
   padding: 5vh;
+  color: white;
 }
 
 #credits {
