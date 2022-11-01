@@ -126,8 +126,14 @@ a:visited {
 }
 
 h1 {
+  position: absolute;
   color: var(--color-mid-light);
   margin-top: 15vh;
+}
+
+p {
+  margin-top: 30vh;
+  padding: 5vh;
 }
 
 #credits {
