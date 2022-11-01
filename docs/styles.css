@@ -127,7 +127,8 @@ a:visited {
 
 h1 {
   position: absolute;
-  color: var(--color-mid-light);
+  color: var(--color-mid-darker);
+  text-shadow: white 1px 0 10px;
   margin-top: 15vh;
 }
 
