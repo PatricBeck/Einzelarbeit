@@ -128,7 +128,7 @@ a:visited {
 h1 {
   position: absolute;
   color: var(--color-mid-darker);
-  text-shadow: white 1px 0 10px;
+  text-shadow: var(--color-accent) 1px 0 10px;
   margin-top: 15vh;
 }
 
@@ -136,6 +136,12 @@ p {
   margin-top: 30vh;
   padding: 5vh;
   color: white;
+  text-shadow: var(--color-mid-darker) 1px 0 10px;
+  /*--Mehrere Spalten--*/
+  columns: 3 12em;
+  -ms-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
 }
 
 #credits {
