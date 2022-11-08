@@ -138,7 +138,7 @@ p {
   color: white;
   text-shadow: var(--color-mid-darker) 1px 0 10px;
   /*--Mehrere Spalten--*/
-  columns: 3 12em;
+  columns: 2 12em;
   -ms-hyphens: auto;
   -webkit-hyphens: auto;
   hyphens: auto;
@@ -156,6 +156,14 @@ p {
 #credits a {
   text-decoration: none;
   color: #99a;
+}
+
+#profilbild {
+  padding: 5vh;
+  margin-top: 30vh;
+  width: 50vh;
+  height: 67vh;
+  clip: rect(auto auto 500px auto);
 }
 
 /* -------------------------- Parallax-Effect -------------------------- */
