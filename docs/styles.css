@@ -132,6 +132,13 @@ h1 {
   margin-top: 15vh;
 }
 
+h2 {
+  position: absolute;
+  color: var(--color-mid-darker);
+  text-shadow: var(--color-accent) 1px 0 10px;
+  margin-top: 15vh;
+}
+
 p {
   margin-top: 30vh;
   padding: 5vh;
@@ -167,6 +174,64 @@ p {
 }
 
 /* -------------------------- Kontaktformular -------------------------- */
+#contact {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  justify-content: flex-start;
+  gap: 0.8em;
+  padding-top: 30vh;
+}
+
+#contact h2 {
+  margin-top: -15vh;
+  color: var(--color-accent);
+  text-shadow: var(--color-accent) 1px 0 10px;
+}
+
+#contact textarea,
+#contact input {
+  border: 1px solid var(--color-accent);
+  background: transparent;
+  width: 60vw;
+  padding: 0.5em;
+  font-family: calibri, sans-serif;
+}
+
+#contact textarea:focus,
+#contact input:focus {
+  outline: none;
+  border: 1px solid var(--color-mid-dark);
+}
+
+#contact textarea::placeholder,
+#contact input::placeholder {
+  color: var(--color-accent);
+}
+
+#contact textarea {
+  min-height: 20vh;
+  resize: vertical;
+}
+
+#contact button {
+  padding: 0.5em 1em;
+  background: var(--color-mid-darker);
+  border: 1px solid var(--color-accent);
+  color: var(--color-accent);
+}
+
+#contact button:hover {
+  cursor: pointer;
+  background: var(--color-mid-dark);
+}
+
+#contact button:active {
+  transition: background-color 0.1s ease;
+  background: var(--color-mid-light);
+}
+
+/* -------------------------- Kontaktformular (alt) 
 @import "compass/css3";
 
 @import url(https://fonts.googleapis.com/css?family=Merriweather);
@@ -246,7 +311,7 @@ form {
     float: none;
     margin-bottom: 0;
   }
-}
+}-------------------------- */
 
 /* Clearfix */
 .cf:before,
