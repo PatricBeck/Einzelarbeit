@@ -56,9 +56,10 @@ body {
 }
 
 section {
+  min-height: 100vh;
   height: 200vh;
   position: relative;
-  width: 170vh;
+  width: 100vh;
   /*background-color: rgba(25, 21, 48, 0.98);*/
   border-radius: 1vh;
   z-index: 1;
@@ -68,7 +69,7 @@ section {
 
 #home {
   background: var(--color-gradient-home);
-  height: 100vh;
+  height: 170vh;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -210,25 +211,57 @@ main {
   place-items: center;
   flex-direction: column;
 }
-
-nav {
+#main-nav {
   position: absolute;
   top: 90vh;
   z-index: 100;
-  display: flex;
+  display: none;
   gap: 3em;
   background-color: var(--color-mid-darker);
   padding: 2vh;
   border-radius: 1vh;
-}
-
-nav a {
-  color: var(--color-accent);
-}
-
-#main-nav {
   margin-top: 3vh;
   color: var(--color-accent);
+}
+
+#main-nav a {
+  color: var(--color-accent);
+}
+
+#mobile-nav {
+  position: fixed;
+  z-index: 5;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  padding: 1.5em;
+  left: 0;
+  height: 64px;
+  width: 64px;
+  justify-content: center;
+}
+
+#mobile-nav a {
+  background: var(--color-accent);
+  color: var(--color-main-dark);
+  position: absolute;
+  padding-bottom: 5rem;
+  width: 0;
+  overflow: hidden;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 14px;
+  transition: width 0.2s linear;
+}
+
+.mobile-nav-icon {
+  fill: var(--color-accent);
+  stroke: var(--color-accent);
+  margin-top: 149vh;
+  margin-left: 3vh;
 }
 
 #reference {
@@ -582,6 +615,7 @@ svg {
 }
 
 .btn {
+  display: none;
   position: fixed;
   bottom: 5%;
   right: 0px;

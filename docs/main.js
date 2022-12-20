@@ -14,6 +14,25 @@ function addStickyClasses() {
   }
 }
 
+document.getElementById("mobile-nav").addEventListener("click", expandNav);
+
+async function expandNav() {
+  let navElements = document.getElementsByClassName("mobile-nav-option");
+  let position = 0;
+  let zIndex = -1;
+  for (let element of navElements) {
+    element.style.bottom = "${position}rem";
+    element.style.zIndex = "${zIndex}";
+
+    zIndex--;
+    await new Promise((r) => setTimeout(r, 100));
+    element.style.width
+      ? (element.style.width = null)
+      : (element.style.width = "4rem");
+    position += 4.5;
+  }
+}
+
 // -------------------------- Parallax-Effect --------------------------
 
 console.log("TEst");
