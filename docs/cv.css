@@ -5,6 +5,7 @@
 
 .timeline {
   margin-top: 15vh;
+  margin-left: 5vh;
   border-left: 4px solid var(--color-accent);
   padding: 2em 0;
   position: relative;
@@ -33,7 +34,8 @@
 .timeline-entry {
   position: relative;
   left: 1.2em;
-  display: felx;
+  width: 80vw;
+  display: flex;
   flex-direction: column;
   margin-bottom: 10vh;
 }
