@@ -147,3 +147,10 @@
 .cf:after {
   clear: both;
 }
+
+/* -------------------------- Mediaquerry -------------------------- */
+@media (min-width: 786px) {
+  #contact {
+    height: 50vh;
+  }
+}

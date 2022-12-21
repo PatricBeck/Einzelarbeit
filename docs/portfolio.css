@@ -1,9 +1,12 @@
+/* -------------------------- Buch (Video) -------------------------- */
+
 @import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
 
 #portfolio {
   display: flex;
   flex-direction: column;
   place-items: center;
+  height: 150vh;
 }
 
 .imgLoader {
@@ -36,7 +39,7 @@
   position: relative;
   width: 420px;
   border-radius: 4px;
-  height: 420px;
+  height: 40vh;
 }
 .title {
   position: absolute;
@@ -609,4 +612,87 @@
 }
 .twitterLink img:hover {
   filter: grayscale(0%);
+}
+
+/* -------------------------- NASA API (https://api.nasa.gov/, https://www.youtube.com/watch?v=hk1ohonv4mk) -------------------------- */
+
+.card {
+  padding: 2em;
+  border-radius: 1vh;
+  width: 100%;
+  max-width: 70vw;
+  margin: 1em;
+}
+
+#content {
+  float: left;
+  max-width: 100%;
+  text-align: center;
+  color: white;
+  margin: 5vw;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+}
+
+button {
+  margin: 0.5em;
+  border-radius: 1vh;
+  border: none;
+  height: 44px;
+  width: auto;
+  outline: none;
+  background: var(--color-mid-dark);
+  color: var(--color-accent);
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+#content img {
+  max-width: 80vw;
+}
+
+#content {
+  color: var(--color-accent);
+  font-size: 0.8em;
+  text-align: left;
+}
+
+input.searchterm {
+  border: none;
+  outline: none;
+  padding: 0.4em 1em;
+  border-radius: 1vh;
+  background: var(--color-mid-dark);
+  color: white;
+  font-family: inherit;
+  font-size: 80;
+  width: calc(100% - 100px);
+}
+
+button:hover {
+  background: var(--color-mid-darker);
+}
+
+#portfolio h3 {
+  margin-top: 5px;
+  color: var(--color-accent);
+  font-size: 1em;
+  text-align: center;
+}
+
+.search {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+}
+
+/* -------------------------- Mediaquerry (Video 14) -------------------------- */
+@media (min-width: 786px) {
+  .book {
+    scale: 1.5;
+  }
+  #content {
+    font-size: 1.1em;
+  }
 }

@@ -153,4 +153,8 @@
     right: calc(100% + 2em - 10px);
     background: var(--color-accent);
   }
+
+  #cv {
+    height: 160vh;
+  }
 }

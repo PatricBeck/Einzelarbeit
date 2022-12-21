@@ -74,6 +74,9 @@ section {
 }
 
 /* -------------------------- Profile Picture -------------------------- */
+.gallery {
+  margin-top: 7vh;
+}
 
 #profilbild_gallery {
   padding: 5vh;
@@ -98,7 +101,6 @@ section {
 .gallery {
   --g: 7px; /* the gap */
   --s: 400px; /* the size */
-
   display: grid;
   border-radius: 50%;
 }
@@ -211,6 +213,7 @@ main {
   place-items: center;
   flex-direction: column;
 }
+
 #main-nav {
   position: absolute;
   top: 90vh;
@@ -226,6 +229,16 @@ main {
 
 #main-nav a {
   color: var(--color-accent);
+}
+
+#reference {
+  position: absolute;
+  top: 89vh;
+}
+
+#main-nav.sticky {
+  position: fixed;
+  top: 0;
 }
 
 #mobile-nav {
@@ -264,16 +277,6 @@ main {
   fill: #fff;
   stroke: #fff;
   position: relative;
-}
-
-#reference {
-  position: absolute;
-  top: 86vh;
-}
-
-.sticky {
-  position: fixed;
-  top: 0;
 }
 
 a:link,
@@ -411,5 +414,21 @@ svg {
 
   #main-nav {
     display: flex;
+  }
+
+  #home {
+    height: 100vh;
+  }
+
+  .gallery {
+    margin-top: 0vh;
+  }
+
+  #profilbild_gallery {
+    max-height: 15%;
+  }
+
+  #Thisisme {
+    max-height: 15%;
   }
 }
