@@ -1,0 +1,96 @@
+/* -------------------------- Lebenslauf --------------------------*/
+.flex-spacer {
+  flex: 1 1 auto;
+}
+
+.timeline {
+  margin-top: 15vh;
+  border-left: 4px solid var(--color-accent);
+  padding: 2em 0;
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+}
+
+.timeline:before {
+  content: "Heute";
+  position: absolute;
+  top: -1.3em;
+  left: -1.3em;
+  font-weight: bold;
+  color: white;
+}
+
+.timeline:after {
+  content: "2012";
+  position: absolute;
+  bottom: -1.3em;
+  left: -1.2em;
+  font-weight: bold;
+  color: white;
+}
+
+.timeline-entry {
+  position: relative;
+  left: 1.2em;
+  display: felx;
+  flex-direction: column;
+  margin-bottom: 10vh;
+}
+
+.timeline-entry:before {
+  content: "";
+  height: 10px;
+  width: 10px;
+  background-color: white;
+  position: absolute;
+  top: 45%;
+  border: 5px solid var(--color-profile-cv);
+  left: -2em;
+  border-radius: 50em;
+}
+
+.tl-title {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.location-dates {
+  display: flex;
+  font-style: italic;
+  font-size: 14px;
+  border-bottom: 1px solid var(--color-accent);
+  margin-bottom: 6px;
+  padding-bottom: 2px;
+}
+
+.tl-description {
+  font-size: 15px;
+}
+
+.tl-description ul {
+  list-style: unset;
+  margin-top: 3px;
+  padding-bottom: 2em;
+  font-size: 13px;
+}
+
+.tl-dates {
+  font-weight: bold;
+  margin-bottom: 3px;
+  color: var(--color-accent);
+}
+
+#cv ul {
+  list-style: none;
+  margin-top: 10px;
+}
+
+#cv ul li::before {
+  content: "\2022";
+  color: var(--color-accent);
+  font-weight: bold;
+  display: inline-block;
+  width: 1.5em;
+  margin-left: -1.5em;
+}

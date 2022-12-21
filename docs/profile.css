@@ -1,0 +1,58 @@
+/* -------------------------- Icons -------------------------- */
+.list {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  min-width: 70vw;
+}
+
+.icon-container li {
+  display: flex;
+  gap: 10px;
+  place-items: center;
+  justify-content: flex-start;
+  margin-bottom: 5px;
+}
+
+.icon-container {
+  padding: 0 1em;
+}
+
+.icon-container li img {
+  width: 32px;
+}
+
+ul {
+  list-style: none;
+}
+
+/* -------------------------- Prograss-Bar -------------------------- */
+.progress-bar {
+  align-self: flex-end;
+  position: relative;
+  height: 0.7em;
+  width: 10em;
+  text-align: end;
+}
+
+.progress-bar::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  mix-blend-mode: color-burn;
+  background-color: var(--color-accent);
+}
+
+.progress-bar-fill {
+  position: relative;
+  height: 100%;
+  width: 0;
+  background-color: var(--color-accent);
+}
+
+.flex-spacer {
+  flex: 1 1 auto;
+}
