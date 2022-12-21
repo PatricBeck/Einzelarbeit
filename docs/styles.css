@@ -246,7 +246,7 @@ main {
 }
 
 #mobile-nav a {
-  background: var(--color-accent);
+  background: var(--color-mid-dark);
   color: var(--color-main-dark);
   position: absolute;
   padding-bottom: 5rem;
@@ -262,10 +262,10 @@ main {
 }
 
 .mobile-nav-icon {
-  height: 64px;
-  width: 64px;
-  fill: var(--color-main-dark);
-  stroke: var(--color-main-dark);
+  height: 50px;
+  width: 50px;
+  fill: var(--color-accent);
+  stroke: var(--color-accent);
   position: relative;
 }
 
@@ -334,7 +334,8 @@ p {
 }
 
 #profilbild {
-  max-width: 70vw;
+  max-width: 50vw;
+  max-height: 50vh;
   clip: rect(auto auto 500px auto);
 }
 

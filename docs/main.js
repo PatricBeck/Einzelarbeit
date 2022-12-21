@@ -29,7 +29,7 @@ async function expandNav() {
     element.style.width
       ? (element.style.width = null)
       : (element.style.width = "4rem");
-    position += 4.5;
+    position += 5.5;
   }
 }
 

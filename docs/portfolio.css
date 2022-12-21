@@ -3,7 +3,6 @@
 #portfolio {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   place-items: center;
 }
 
