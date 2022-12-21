@@ -73,7 +73,7 @@ section {
   /*filter: blur(15px);*/
 }
 
-/* -------------------------- Profile Picture -------------------------- */
+/* -------------------------- Profile Picture (https://codepen.io/t_afif/pen/ZEoJbvx - angepasst)  -------------------------- */
 .gallery {
   margin-top: 7vh;
 }
@@ -339,7 +339,7 @@ p {
   clip: rect(auto auto 500px auto);
 }
 
-/* -------------------------- Parallax-Effect -------------------------- */
+/* -------------------------- Parallax-Effect (https://codepen.io/isladjan/pen/abdyPBw) -------------------------- */
 body,
 html {
   margin: 0;

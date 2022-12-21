@@ -681,12 +681,6 @@ button:hover {
   text-align: center;
 }
 
-.search {
-  display: flex;
-  flex-direction: column;
-  place-items: center;
-}
-
 /* -------------------------- Mediaquerry (Video 14) -------------------------- */
 @media (min-width: 786px) {
   .book {

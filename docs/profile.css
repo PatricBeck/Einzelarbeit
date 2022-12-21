@@ -1,4 +1,4 @@
-/* -------------------------- Icons -------------------------- */
+/* -------------------------- Icons (Video - angepasst) -------------------------- */
 .list {
   display: flex;
   flex-direction: column;
@@ -26,7 +26,7 @@ ul {
   list-style: none;
 }
 
-/* -------------------------- Prograss-Bar -------------------------- */
+/* -------------------------- Prograss-Bar (Video - angepasst) -------------------------- */
 .progress-bar {
   align-self: flex-end;
   position: relative;
