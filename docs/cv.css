@@ -64,7 +64,8 @@
   border-bottom: 1px solid var(--color-accent);
   margin-bottom: 6px;
   padding-bottom: 2px;
-  width: 300px;
+  width: 70vw;
+  max-width: 430px;
 }
 
 .tl-description {
@@ -96,4 +97,60 @@
   display: inline-block;
   width: 1.5em;
   margin-left: -1.5em;
+}
+
+/* -------------------------- Mediaquerry (Video 14) -------------------------- */
+@media (min-width: 786px) {
+  #cv {
+    justify-content: flex-start;
+  }
+
+  .timeline {
+    display: flex;
+    flex-direction: column;
+    width: 36em;
+    flex: 1 1 auto;
+    max-height: 100vh;
+    gap: 0;
+    justify-content: space-around;
+    background: linear-gradient(#ffe2b7, #ffe2b7) no-repeat center / 4px 100%;
+    border: none;
+  }
+
+  .timeline::before {
+    left: calc(50% - 2.5ch);
+  }
+
+  .timeline::after {
+    left: calc(50% - 2ch);
+  }
+
+  .timeline-entry {
+    width: 16em;
+    left: 0;
+    flex: 0 1 auto;
+  }
+
+  .timeline-entry.right {
+    align-self: flex-end;
+  }
+
+  .timeline-entry.left {
+    align-self: flex-start;
+  }
+
+  .timeline-entry::after {
+    border: 5px solid var(--color-main-dark);
+  }
+
+  .timeline-entry.left::before {
+    left: calc(100% + 2em - 10px);
+    background: var(--color-accent);
+  }
+
+  .timeline-entry.right::before {
+    left: unset;
+    right: calc(100% + 2em - 10px);
+    background: var(--color-accent);
+  }
 }

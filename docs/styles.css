@@ -1,4 +1,6 @@
-/* -------------------------- Cfntent -------------------------- */
+/* -------------------------- Content -------------------------- */
+
+/* -------------------------- Colors & Gradients -------------------------- */
 :root {
   --color-main-dark: #191530;
   --color-mid-darker: #6a4e6e;
@@ -37,14 +39,9 @@
     var(--color-portfolio-contact) 0%,
     var(--color-contact-dark) 100%
   );
-
-  /*--color-gradient: linear-gradient(
-    0deg,
-    var(--color-main-dark) 0%,
-    var(--color-mid-darker) 50%,
-    var(--color-mid-light) 100%
-  );*/
 }
+
+/* -------------------------- Pages -------------------------- */
 
 * {
   font-family: Arial, Helvetica, sans-serif;
@@ -60,7 +57,6 @@ section {
   height: 200vh;
   position: relative;
   width: 90vw;
-  /*background-color: rgba(25, 21, 48, 0.98);*/
   border-radius: 1vh;
   z-index: 1;
   display: flex;
@@ -77,7 +73,7 @@ section {
   /*filter: blur(15px);*/
 }
 
-/* --- profilbild ---*/
+/* -------------------------- Profile Picture -------------------------- */
 
 #profilbild_gallery {
   padding: 5vh;
@@ -174,7 +170,8 @@ section {
   --_x: calc(-1 * var(--g));
 }
 
-/* --- Weiter mit Profile ---*/
+/* -------------------------- Weiter mit Profile -------------------------- */
+
 #profile {
   height: 170vh;
   background: var(--color-gradient-profile);
@@ -240,8 +237,8 @@ main {
   gap: 1.5em;
   padding: 1.5em;
   left: 0;
-  height: 64px;
-  width: 64px;
+  height: 60px;
+  width: 60px;
   justify-content: center;
 }
 
@@ -264,8 +261,8 @@ main {
 .mobile-nav-icon {
   height: 50px;
   width: 50px;
-  fill: var(--color-accent);
-  stroke: var(--color-accent);
+  fill: #fff;
+  stroke: #fff;
   position: relative;
 }
 
@@ -407,7 +404,7 @@ svg {
 }
 
 /* -------------------------- Mediaquerry -------------------------- */
-@media (min-width: 768px) {
+@media (min-width: 786px) {
   #mobile-nav {
     visibility: hidden;
   }
